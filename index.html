@@ -14,7 +14,12 @@
 
         <p>You will be playing against the computer.</p>
         <p>You can choose between Rock, Paper, and Scissors.</p>
-        <p>The first one to three points wins.</p>
+        <p>Choose your game mode:</p>
+        <div class="game-mode-selector">
+          <button class="btn" id="best-of-3-btn">Best of 3</button>
+          <button class="btn" id="best-of-5-btn">Best of 5</button>
+        </div>
+        <p id="win-condition">The first one to three points wins.</p>
 
         <p>Here are the rules to getting a point in the game:</p>
         <ul>
@@ -36,6 +41,11 @@
           >Computer Score:
           <span class="score" id="computer-score">0</span></strong
         >
+      </div>
+
+      <div class="computer-choice-container">
+        <h2>Computer's Choice:</h2>
+        <div class="computer-choice" id="computer-choice">?</div>
       </div>
 
       <section class="options-container">
