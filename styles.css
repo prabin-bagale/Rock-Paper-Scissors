@@ -85,3 +85,48 @@ h1 {
   display: none;
   margin: 20px auto;
 }
+
+.computer-choice-container {
+  margin: 20px 0;
+}
+
+.computer-choice {
+  font-size: 3rem;
+  margin: 15px 0;
+  min-height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.computer-choice.animate {
+  animation: bounce 0.5s ease-in-out;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.game-mode-selector {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.game-mode-selector .btn {
+  width: 120px;
+}
+
+.game-mode-selector .btn.active {
+  background-image: linear-gradient(#ffcc4c, #f89808);
+  border-color: var(--yellow);
+}
